@@ -711,7 +711,14 @@ xclip
 	font-size: 14px;
 	position: relative;
 	z-index: 1;
+    
 }
+.services-inner-box #moreContent{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 
 .services-inner-box::after{
 	background: #28a9e2;
@@ -2619,4 +2626,9 @@ select.mobile-device {
 .btn-light:focus {
     border-color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
+}
+
+.moreBtn span{
+    background-color: #333333;
+    padding: 2%;
 }
