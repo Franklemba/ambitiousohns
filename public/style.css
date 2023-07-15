@@ -717,6 +717,14 @@ xclip
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    transition: all 0.9s ease; /* Add transition property */
+}
+
+.services-inner-box #moreContent.active{
+    text-overflow: ellipsis;
+    white-space: initial;
+    overflow: hidden;
+    transition: all 0.9s ease; /* Add transition property */
 }
 
 
