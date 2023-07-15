@@ -2639,4 +2639,5 @@ select.mobile-device {
 .moreBtn span{
     background-color: #333333;
     padding: 2%;
+    cursor: pointer;
 }
