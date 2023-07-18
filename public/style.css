@@ -1445,7 +1445,6 @@ xclip
 }
 
 .hoverbutton {
-    background-color: #333333;
     position: absolute;
     color: #ffffff !important;
     top: 70%;
@@ -1454,11 +1453,16 @@ xclip
     left: 0;
     opacity: 0;
     right: 0;
-    width: 50px;
-    height: 50px;
+    width: fit-content;
+    height: fit-content;
     line-height: 50px;
     text-align: center;
     margin: -20px auto;
+}
+
+
+.hoverbutton:hover{
+   background-color: #333333;
 }
 
 .service-widget:hover .hoverbutton {
