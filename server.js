@@ -3,10 +3,17 @@ const express = require('express')
 const app = express()
 const expressLayouts = require('express-ejs-layouts')
 const bodyParser = require('body-parser')
-// const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 const methodOverride = require('method-override')
 
 const homeRouter = require('./routes/index')
+
+
+
+// connecting to database
+mongoose.connect(process.env.database_Url).then(()=>{
+    console.log('database is connected')
+   }).catch((err)=> console.log('error connecting to database ',err))
 
 //////setting up the server///////
 
